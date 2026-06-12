@@ -19,9 +19,9 @@ def get_tasks(completed):
     if completed is None:
         return database.get_all_task()
     elif completed:
-        return database.get_active_task()
-    else:
         return database.get_complete_task()
+    else:
+        return database.get_active_task()
 
 
 def get_single_task(task_id:int):
